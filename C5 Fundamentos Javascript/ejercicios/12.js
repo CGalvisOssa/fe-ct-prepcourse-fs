@@ -6,6 +6,16 @@ function tienenMismaLongitud(str1, str2) {
   // "SoyHenry", "HenrySoy" ---> true 
   // "hi", "there" ---> false 
   // Tu código:
+
+  return str1.length === str2.length;
+  
 }
+
+// Ejemplos de uso:
+console.log(tienenMismaLongitud("hola", "alan")); // true
+console.log(tienenMismaLongitud("SoyHenry", "HenrySoy")); // true
+console.log(tienenMismaLongitud("hi", "there")); // false
+console.log(tienenMismaLongitud("hello", "world")); // true
+console.log(tienenMismaLongitud("", "test")); // false
 
 module.exports = tienenMismaLongitud;
