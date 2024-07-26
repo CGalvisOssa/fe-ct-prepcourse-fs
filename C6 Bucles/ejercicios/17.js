@@ -1,3 +1,5 @@
+const { blockQuote } = require("discord.js");
+
 function colors(color) {
   // La función recibe un color. Retorna el string correspondiente:
   // En caso que el color recibido sea "blue"   --> "This is blue".
@@ -7,6 +9,23 @@ function colors(color) {
   // Si no es ninguno de esos colores           --> "Color not found".
   // PISTA: utilizar el statement SWITCH.
   // Tu código:
+  switch (color){
+    case "blue":
+      return "This is blue";
+    case "red":
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default:
+      return "Color not found";
+  }
 }
 
+console.log(colors("blue"))
+console.log(colors("red"))
+console.log(colors("green"))
+console.log(colors("orange"))
+console.log(colors("blasdasue"))
 module.exports = colors;

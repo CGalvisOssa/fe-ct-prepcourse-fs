@@ -10,7 +10,7 @@ function elevar(num, exponent) {
   return Math.pow(num, exponent)
 }
 
-console.log(elevar(2, 2))
+console.log(elevar(2, 2));
 
 
 module.exports = elevar;

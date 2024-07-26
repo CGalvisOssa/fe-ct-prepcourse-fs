@@ -1,11 +1,23 @@
 function obtenerDiaSemana(numero) {
-  // La función recibe un "numero" entre 1 y 7 por argumento.
-  // Devuelve el día de la semana correspondiente a este número,
-  // por ejemplo, 1 para "Lunes", 2 para "Martes", etc.
-  // El día devuelto debe tener mayúscula inicial y no llevar tilde.
-  // Si el número no corresponde a un día de la semana, retorna
-  // el string "No es un dia de la semana"
-  // Tu código:
+  var diasSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+  
+  // Verificar si el número está entre 1 y 7
+  if (numero >= 1 && numero <= 7) {
+    return diasSemana[numero - 1];
+  } else {
+    return "No es un dia de la semana";
+  }
 }
+
+// Ejemplos de uso:
+console.log(obtenerDiaSemana(1)); // "Lunes"
+console.log(obtenerDiaSemana(2)); // "Martes"
+console.log(obtenerDiaSemana(3)); // "Miercoles"
+console.log(obtenerDiaSemana(4)); // "Jueves"
+console.log(obtenerDiaSemana(5)); // "Viernes"
+console.log(obtenerDiaSemana(6)); // "Sabado"
+console.log(obtenerDiaSemana(7)); // "Domingo"
+console.log(obtenerDiaSemana(8)); // "No es un dia de la semana"
+console.log(obtenerDiaSemana(0)); // "No es un dia de la semana"
 
 module.exports = obtenerDiaSemana;
